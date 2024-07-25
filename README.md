@@ -24,11 +24,11 @@ _Design from_: --
 
 ## ✅ Tasks
 
--   [] layout render
-    -   [] header
-    -   [] main content
-    -   [] footer
--   [] navigation between pages
+-   [x] layout render
+    -   [ ] header
+    -   [ ] main content
+    -   [ ] footer
+-   [ ] navigation between pages
 
 ### 💻 If you want to open my website design, you just need to fallow the steps I've written below:
 
