@@ -5,3 +5,23 @@ body * {
     vertical-align: top;
     box-sizing: border-box;
 }
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+header img {
+    height: 50px;
+    margin: 20px 20px;
+}
+header p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+main {
+    padding: 10px 20px;
+}
+footer {
+    padding: 10px 20px;
+}
