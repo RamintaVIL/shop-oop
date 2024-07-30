@@ -128,22 +128,22 @@
     margin-left: var(--c0);
 }
 .visible-block {
-    display: block;
+    display: block !important;
 }
 .visible-inline-block {
-    display: inline-block;
+    display: inline-block !important;
 }
 .visible-flex {
-    display: flex;
+    display: flex !important;
 }
 .visible-grid {
-    display: grid;
+    display: grid !important;
 }
 .visible-table {
-    display: table;
+    display: table !important;
 }
 .hidden {
-    display: none;
+    display: none !important;
 }
 /* ekrano plotis, mes skaiciavome rem, bet galime ir px = 36 * 16 */
 @media (min-width: 36rem) {
@@ -320,22 +320,22 @@
         margin-left: var(--m0);
     }
     .visible-md-block {
-        display: block;
+        display: block !important;
     }
     .visible-md-inline-block {
-        display: inline-block;
+        display: inline-block !important;
     }
     .visible-md-flex {
-        display: flex;
+        display: flex !important;
     }
     .visible-md-grid {
-        display: grid;
+        display: grid !important;
     }
     .visible-md-table {
-        display: table;
+        display: table !important;
     }
     .hidden-md {
-        display: none;
+        display: none !important;
     }
 }
 @media (min-width: 62rem) {
@@ -415,22 +415,22 @@
         margin-left: var(--m0);
     }
     .visible-lg-block {
-        display: block;
+        display: block !important;
     }
     .visible-lg-inline-block {
-        display: inline-block;
+        display: inline-block !important;
     }
     .visible-lg-flex {
-        display: flex;
+        display: flex !important;
     }
     .visible-lg-grid {
-        display: grid;
+        display: gri !important;
     }
     .visible-lg-table {
-        display: table;
+        display: table !important;
     }
     .hidden-lg {
-        display: none;
+        display: none !important;
     }
 }
 @media (min-width: 75rem) {
@@ -510,22 +510,22 @@
         margin-left: var(--m0);
     }
     .visible-xl-block {
-        display: block;
+        display: block !important;
     }
     .visible-xl-inline-block {
-        display: inline-block;
+        display: inline-block !important;
     }
     .visible-xl-flex {
-        display: flex;
+        display: flex !important;
     }
     .visible-xl-grid {
-        display: grid;
+        display: grid !important;
     }
     .visible-xl-table {
-        display: table;
+        display: table !important;
     }
     .hidden-xl {
-        display: none;
+        display: none !important;
     }
 }
 @media (min-width: 88rem) {
@@ -604,22 +604,22 @@
     .m-xxl-0 {
         margin-left: var(--m0);
     }
-    .visible-sm-block {
-        display: block;
+    .visible-xxl-block {
+        display: block !important;
     }
     .visible-xxl-inline-block {
-        display: inline-block;
+        display: inline-block !important;
     }
     .visible-xxl-flex {
-        display: flex;
+        display: flex !important;
     }
     .visible-xxl-grid {
-        display: grid;
+        display: grid !important;
     }
     .visible-xxl-table {
-        display: table;
+        display: table !important;
     }
     .hidden-xxl {
-        display: none;
+        display: none !important;
     }
 }

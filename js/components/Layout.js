@@ -5,15 +5,15 @@ export class Layout {
 
     header() {
         const HTML = `
-        <header class="container">
+        <header class="container main-header">
            <div class="row">
-             <div class="col-12>
-                <img src="#" alt = "Logo">
-                <nav class="hidden">
-                    <a href="./">Home</a>
-                    <a href="./services">Services</a>
-                    <a href="./team">Team</a>
-                    <a href="./contact-us">Contact us</a>
+             <div class="col-12 main-header-content>
+                <img class="logo" src="./img/logo.png" alt="logo">
+                <nav class="hidden visible-sm-flex main-nav">
+                    <a class="link" href="./">Home</a>
+                    <a class="link" href="./services">Services</a>
+                    <a class="link" href="./team">Team</a>
+                    <a class="link" href="./contact-us">Contact us</a>
                 </nav>
             </div>
           </div>
@@ -24,22 +24,7 @@ export class Layout {
     main() {
         const HTML = `
               <main class="container">
-                  <section class="row">
-                      <h1 class="col-12 main-title">Pirmas posukis</h1>
-                  </section>
-                  <section class="row">
-                       <div class="col-10 col-sm-8">A</div>
-                       <div class="col-1 m-1 m-sm-3">B</div>
-                  </section>
-                  <section class="row">
-                       <div class="col-12 col-sm-6 col-lg-4 col-xl-3">Pirmas posukis</div>
-                       <div class="col-12 col-sm-6 col-lg-4 col-xl-3">Pirmas posukis</div>
-                       <div class="col-6 col-lg-4 col-xl-3">Pirmas posukis</div>
-                       <div class="col-6 col-lg-4 col-xl-3">Pirmas posukis</div>
-                       <div class="col-12 col-sm-6 col-lg-4 col-xl-3">Pirmas posukis</div>
-                       <div class="col-12 col-sm-6 col-lg-4 col-xl-3">Pirmas posukis</div>
-                  </section>
-
+                
               </main>`;
         return HTML;
     }
