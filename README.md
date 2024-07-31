@@ -24,11 +24,17 @@ _Design from_: --
 
 ## ✅ Tasks
 
+-   [x] demo completed task
 -   [x] layout render
-    -   [ ] header
-    -   [ ] main content
-    -   [ ] footer
--   [ ] navigation between pages
+    -   [x] header
+    -   [x] main content
+    -   [x] footer
+-   [x] navigation between pages
+-   [] product CRUD:
+    -   [] list
+    -   [] add
+    -   [] remove
+    -   [] update
 
 ### 💻 If you want to open my website design, you just need to fallow the steps I've written below:
 

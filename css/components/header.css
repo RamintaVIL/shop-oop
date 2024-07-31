@@ -20,4 +20,16 @@
     font-size: 1.2rem;
     text-decoration: none;
     color: #333;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.main-header .link:hover {
+    color: #36f;
+}
+.main-header .link.menu-btn {
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    background-color: #333;
+    color: white;
 }

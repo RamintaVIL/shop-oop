@@ -1,30 +1,29 @@
 :root {
     --c0: 0;
-    --c1: calc(100 / 12);
-    --c2: calc(100 / 12 * 2);
+    --c1: calc(100% / 12);
+    --c2: calc(100% / 12 * 2);
     --c3: 25%;
-    --c4: calc(100 / 12 * 4);
-    --c5: calc(100 / 12 * 5);
+    --c4: calc(100% / 12 * 4);
+    --c5: calc(100% / 12 * 5);
     --c6: 50%;
-    --c7: calc(100 / 12 * 7);
-    --c8: calc(100 / 12 * 8);
+    --c7: calc(100% / 12 * 7);
+    --c8: calc(100% / 12 * 8);
     --c9: 75%;
-    --c10: calc(100 / 12 * 10);
-    --c11: calc(100 / 12 * 11);
+    --c10: calc(100% / 12 * 10);
+    --c11: calc(100% / 12 * 11);
     --c12: 100%;
-
     --m0: 0;
-    --m1: calc(100 / 12);
-    --m2: calc(100 / 12 * 2);
+    --m1: calc(100% / 12);
+    --m2: calc(100% / 12 * 2);
     --m3: 25%;
-    --m4: calc(100 / 12 * 4);
-    --m5: calc(100 / 12 * 5);
+    --m4: calc(100% / 12 * 4);
+    --m5: calc(100% / 12 * 5);
     --m6: 50%;
-    --m7: calc(100 / 12 * 7);
-    --m8: calc(100 / 12 * 8);
+    --m7: calc(100% / 12 * 7);
+    --m8: calc(100% / 12 * 8);
     --m9: 75%;
-    --m10: calc(100 / 12 * 10);
-    --m11: calc(100 / 12 * 11);
+    --m10: calc(100% / 12 * 10);
+    --m11: calc(100% / 12 * 11);
 }
 
 .container {
@@ -34,29 +33,18 @@
     gap: 3rem;
     padding: 5rem 1rem;
 }
-
 .container > .row {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-/* *-leidzia pritaikyti pasikartojancias stiliaus taisykles .col ir nesvarbu ar tai div, h1 ir t.t.*/
-/* .container > .row > * {
-    padding: 0 1rem;
-    outline: 1px solid red;
-} */
-
-/* pagauti tik tuos kuri turi class col-, naudojant si atributa */
-.container > .row > [class*='col-'] {
+[class*='col-'] {
     padding: 0 1rem;
     /* outline: 1px solid red; */
 }
-
-/* Stulpeliu plociu kombinacijos  */
 .col-12 {
     width: var(--c12);
 }
-/* 11-ika 12-tuju */
 .col-11 {
     width: var(--c11);
 }
@@ -92,41 +80,42 @@
 }
 
 .m-11 {
-    margin-left: var(--c11);
+    margin-left: var(--m11);
 }
 .m-10 {
-    margin-left: var(--c10);
+    margin-left: var(--m10);
 }
 .m-9 {
-    margin-left: var(--c9);
+    margin-left: var(--m9);
 }
 .m-8 {
-    margin-left: var(--c8);
+    margin-left: var(--m8);
 }
 .m-7 {
-    margin-left: var(--c7);
+    margin-left: var(--m7);
 }
 .m-6 {
-    margin-left: var(--c6);
+    margin-left: var(--m6);
 }
 .m-5 {
-    margin-left: var(--c5);
+    margin-left: var(--m5);
 }
 .m-4 {
-    margin-left: var(--c4);
+    margin-left: var(--m4);
 }
 .m-3 {
-    margin-left: var(--c3);
+    margin-left: var(--m3);
 }
 .m-2 {
-    margin-left: var(--c2);
+    margin-left: var(--m2);
 }
 .m-1 {
-    margin-left: var(--c1);
+    margin-left: var(--m1);
 }
 .m-0 {
-    margin-left: var(--c0);
+    margin-left: var(--m0);
 }
+
 .visible-block {
     display: block !important;
 }
@@ -145,12 +134,31 @@
 .hidden {
     display: none !important;
 }
-/* ekrano plotis, mes skaiciavome rem, bet galime ir px = 36 * 16 */
+
 @media (min-width: 36rem) {
     .container > .row {
-        /* turinio plotis */
         width: 30rem;
     }
+
+    .visible-sm-block {
+        display: block !important;
+    }
+    .visible-sm-inline-block {
+        display: inline-block !important;
+    }
+    .visible-sm-flex {
+        display: flex !important;
+    }
+    .visible-sm-grid {
+        display: grid !important;
+    }
+    .visible-sm-table {
+        display: table !important;
+    }
+    .hidden-sm {
+        display: none !important;
+    }
+
     .col-sm-12 {
         width: var(--c12);
     }
@@ -187,6 +195,7 @@
     .col-sm-1 {
         width: var(--c1);
     }
+
     .m-sm-11 {
         margin-left: var(--m11);
     }
@@ -223,29 +232,32 @@
     .m-sm-0 {
         margin-left: var(--m0);
     }
-    .visible-sm-block {
-        display: block;
-    }
-    .visible-sm-inline-block {
-        display: inline-block;
-    }
-    .visible-sm-flex {
-        display: flex;
-    }
-    .visible-sm-grid {
-        display: grid;
-    }
-    .visible-sm-table {
-        display: table;
-    }
-    .hidden-sm {
-        display: none;
-    }
 }
+
 @media (min-width: 48rem) {
     .container > .row {
         width: 42rem;
     }
+
+    .visible-md-block {
+        display: block !important;
+    }
+    .visible-md-inline-block {
+        display: inline-block !important;
+    }
+    .visible-md-flex {
+        display: flex !important;
+    }
+    .visible-md-grid {
+        display: grid !important;
+    }
+    .visible-md-table {
+        display: table !important;
+    }
+    .hidden-md {
+        display: none !important;
+    }
+
     .col-md-12 {
         width: var(--c12);
     }
@@ -319,29 +331,32 @@
     .m-md-0 {
         margin-left: var(--m0);
     }
-    .visible-md-block {
-        display: block !important;
-    }
-    .visible-md-inline-block {
-        display: inline-block !important;
-    }
-    .visible-md-flex {
-        display: flex !important;
-    }
-    .visible-md-grid {
-        display: grid !important;
-    }
-    .visible-md-table {
-        display: table !important;
-    }
-    .hidden-md {
-        display: none !important;
-    }
 }
+
 @media (min-width: 62rem) {
     .container > .row {
         width: 56rem;
     }
+
+    .visible-lg-block {
+        display: block !important;
+    }
+    .visible-lg-inline-block {
+        display: inline-block !important;
+    }
+    .visible-lg-flex {
+        display: flex !important;
+    }
+    .visible-lg-grid {
+        display: grid !important;
+    }
+    .visible-lg-table {
+        display: table !important;
+    }
+    .hidden-lg {
+        display: none !important;
+    }
+
     .col-lg-12 {
         width: var(--c12);
     }
@@ -378,6 +393,7 @@
     .col-lg-1 {
         width: var(--c1);
     }
+
     .m-lg-11 {
         margin-left: var(--m11);
     }
@@ -414,29 +430,32 @@
     .m-lg-0 {
         margin-left: var(--m0);
     }
-    .visible-lg-block {
-        display: block !important;
-    }
-    .visible-lg-inline-block {
-        display: inline-block !important;
-    }
-    .visible-lg-flex {
-        display: flex !important;
-    }
-    .visible-lg-grid {
-        display: gri !important;
-    }
-    .visible-lg-table {
-        display: table !important;
-    }
-    .hidden-lg {
-        display: none !important;
-    }
 }
+
 @media (min-width: 75rem) {
     .container > .row {
         width: 69rem;
     }
+
+    .visible-xl-block {
+        display: block !important;
+    }
+    .visible-xl-inline-block {
+        display: inline-block !important;
+    }
+    .visible-xl-flex {
+        display: flex !important;
+    }
+    .visible-xl-grid {
+        display: grid !important;
+    }
+    .visible-xl-table {
+        display: table !important;
+    }
+    .hidden-xl {
+        display: none !important;
+    }
+
     .col-xl-12 {
         width: var(--c12);
     }
@@ -473,6 +492,7 @@
     .col-xl-1 {
         width: var(--c1);
     }
+
     .m-xl-11 {
         margin-left: var(--m11);
     }
@@ -509,29 +529,32 @@
     .m-xl-0 {
         margin-left: var(--m0);
     }
-    .visible-xl-block {
-        display: block !important;
-    }
-    .visible-xl-inline-block {
-        display: inline-block !important;
-    }
-    .visible-xl-flex {
-        display: flex !important;
-    }
-    .visible-xl-grid {
-        display: grid !important;
-    }
-    .visible-xl-table {
-        display: table !important;
-    }
-    .hidden-xl {
-        display: none !important;
-    }
 }
+
 @media (min-width: 88rem) {
     .container > .row {
         width: 82rem;
     }
+
+    .visible-xxl-block {
+        display: block !important;
+    }
+    .visible-xxl-inline-block {
+        display: inline-block !important;
+    }
+    .visible-xxl-flex {
+        display: flex !important;
+    }
+    .visible-xxl-grid {
+        display: grid !important;
+    }
+    .visible-xxl-table {
+        display: table !important;
+    }
+    .hidden-xxl {
+        display: none !important;
+    }
+
     .col-xxl-12 {
         width: var(--c12);
     }
@@ -568,6 +591,7 @@
     .col-xxl-1 {
         width: var(--c1);
     }
+
     .m-xxl-11 {
         margin-left: var(--m11);
     }
@@ -603,23 +627,5 @@
     }
     .m-xxl-0 {
         margin-left: var(--m0);
-    }
-    .visible-xxl-block {
-        display: block !important;
-    }
-    .visible-xxl-inline-block {
-        display: inline-block !important;
-    }
-    .visible-xxl-flex {
-        display: flex !important;
-    }
-    .visible-xxl-grid {
-        display: grid !important;
-    }
-    .visible-xxl-table {
-        display: table !important;
-    }
-    .hidden-xxl {
-        display: none !important;
     }
 }
