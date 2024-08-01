@@ -6,21 +6,24 @@ export class PageShopList {
     }
 
     render() {
-        const data = [
-            { title: 'Pudra', amount: 1 },
-            { title: 'Balzamas', amount: 2 },
-            { title: 'Veido kremas', amount: 1 },
-            { title: 'Serumas', amount: 1 },
-        ]
+        const data = JSON.parse(localStorage.getItem('itemList'));
         let HTML = '';
 
-        for (const item of data) {
-            HTML += `
+        if (data) {
+            for (const item of data) {
+                HTML += `
                 <tr>
                    <td>${item.title}</td>
-                   <td>${item.amount}</td>
-                   <td>Actions</td>
+                   <td>
+                        <button>-</button>
+                        ${item.amount}
+                        <button>+</button>
+                   </td>
+                   <td>
+                        <button>Delete</button>
+                   </td>
                 </tr>`;
+            }
         }
 
         this.DOM.innerHTML = `
