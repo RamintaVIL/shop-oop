@@ -7,13 +7,13 @@ export class PageServices {
 
     render() {
         this.DOM.innerHTML = `
-        <section class="row">
-            <div class="col-12">
-                 <h1>Services page</h1>
-                 <p>Here is our services!</p>
-            </div>
-        </section>
-            < section class="row services-list">
+            <section class="row">
+                <div class="col-12">
+                    <h1>Services page</h1>
+                    <p>Here is our services!</p>
+                </div>
+            </section>
+            <section class="row services-list">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="service">
                         <h2>Design</h2>
@@ -22,21 +22,21 @@ export class PageServices {
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="service">
-                        <h2>Front-end programing</h2>
+                        <h2>Front-end programming</h2>
                         <p>Something about this cool services!</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                     <div class="service">
-                        <h2>Back-end programing</h2>
+                    <div class="service">
+                        <h2>Back-end programming</h2>
                         <p>Something about this cool services!</p>
-                     </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                     <div class="service">
+                    <div class="service">
                         <h2>Databases</h2>
                         <p>Something about this cool services!</p>
-                     </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="service">
@@ -45,17 +45,17 @@ export class PageServices {
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                     <div class="service">
+                    <div class="service">
                         <h2>UX</h2>
                         <p>Something about this cool services!</p>
-                     </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="service">
-                         <h2>friendly support</h2>
-                         <p>Something about this cool services!</p>
+                        <h2>Friendly support</h2>
+                        <p>Something about this cool services!</p>
                     </div>
                 </div>
-        </section >`;
+            </section>`;
     }
 }

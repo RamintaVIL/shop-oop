@@ -33,8 +33,8 @@ _Design from_: --
 -   [] product CRUD:
     -   [x] list
     -   [x] add
-    -   [] remove
-    -   [] update
+    -   [x] remove
+    -   [x] update
 
 ### 💻 If you want to open my website design, you just need to fallow the steps I've written below:
 

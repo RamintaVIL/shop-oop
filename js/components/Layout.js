@@ -67,7 +67,7 @@ export class Layout {
             <header class="container main-header">
                 <div class="row">
                     <div class="col-12 main-header-content">
-                        <img class="logo" src="" alt="Logo">
+                        <img class="logo" src="#" alt="Logo">
                         <nav class="main-nav">
                             ${navHTML}
                         </nav>
@@ -82,9 +82,7 @@ export class Layout {
 
         for (let i = 0; i < buttonsDOM.length; i++) {
             buttonsDOM[i].addEventListener('click', () => {
-                // susirandame puslalio klase.
                 const pageClass = this.pagesData[i].content;
-                // kazkurio puslapio klases construktor.
                 new pageClass(this.mainDOM);
             });
         }

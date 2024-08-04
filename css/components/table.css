@@ -38,15 +38,7 @@ tbody td img {
     height: 3rem;
     border-radius: 50%;
 }
-/* tbody td button {
-    background-color: #f8b310;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 6px;
+tbody td button {
+    min-width: 2em;
+    padding: 0.3em 0.5em;
 }
-
-.fa-envelope-o {
-    background-color: #fff5dc;
-    padding: 6px 6px;
-    border-radius: 5px;
-} */
