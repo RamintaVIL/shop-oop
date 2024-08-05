@@ -3,8 +3,6 @@ export class PageShopList {
         this.DOM = DOM;
         this.localStorageKey = 'itemList';
 
-        console.log(this.readLocalStorage());
-
         this.render();
         this.listEvents();
     }
@@ -53,8 +51,6 @@ export class PageShopList {
     }
 
     minus(rowDOM, buttonDOM) {
-        console.log(this);
-
         const amountChange = +buttonDOM.dataset.step;
         const idToDecrease = rowDOM.id;
         const amountDOM = rowDOM.querySelector('span');
@@ -96,16 +92,18 @@ export class PageShopList {
     listEvents() {
         const rowsDOM = this.DOM.querySelectorAll('tbody > tr');
         const funcList = {
-            minus: this.minus,
-            plus: this.plus,
-            delete: this.delete,
+            minus: this.minus.bind(this),
+            plus: this.plus.bind(this),
+            delete: this.delete.bind(this),
         };
 
         for (const rowDOM of rowsDOM) {
             const buttonsDOM = rowDOM.querySelectorAll('button');
 
             for (const buttonDOM of buttonsDOM) {
-                buttonDOM.addEventListener('click', () => funcList[buttonDOM.dataset.method](rowDOM, buttonDOM));
+                buttonDOM.addEventListener('click', function () {
+                    return funcList[buttonDOM.dataset.method](rowDOM, buttonDOM);
+                });
             }
         }
     }
